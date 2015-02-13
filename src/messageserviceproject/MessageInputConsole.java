@@ -12,8 +12,9 @@ import java.util.Scanner;
  * @author Alex
  */
 public class MessageInputConsole implements MessageInputStrategy{
-    public String inputMessage() {
+    public final String inputMessage() {
         Scanner keyboardInput = new Scanner(System.in);
+        System.out.print("Enter a message!:  ");
         return keyboardInput.nextLine();
     }
 }

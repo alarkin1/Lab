@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class MessageInputGUI implements MessageInputStrategy {
 
-    public String inputMessage() {
+    public final String inputMessage() {
         return JOptionPane.showInputDialog(null, "Enter a message: ");
     }
 }

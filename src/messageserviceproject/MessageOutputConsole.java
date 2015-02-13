@@ -12,7 +12,7 @@ package messageserviceproject;
 public class MessageOutputConsole implements MessageOutputStrategy {
 
     @Override
-    public void outputMessage(String message) {
+    public final void outputMessage(String message) {
         System.out.println(message);
     }
 

@@ -19,23 +19,23 @@ public class MessageService {
         this.inputType = input;
     }
 
-    public MessageOutputStrategy getMessage() {
+    public final MessageOutputStrategy getMessage() {
         return outputType;
     }
 
-    public void setMessage(MessageOutputStrategy message) {
+    public final void setMessage(MessageOutputStrategy message) {
         this.outputType = outputType;
     }
 
-    public void displayMessage() {
+    public final void displayMessage() {
         outputType.outputMessage(inputType.inputMessage());
     }
 
-    public MessageInputStrategy getInputMessage() {
+    public final MessageInputStrategy getInputMessage() {
         return inputType;
     }
 
-    public void setInputMessage(MessageInputStrategy inputMessage) {
+    public final void setInputMessage(MessageInputStrategy inputMessage) {
         this.inputType = inputMessage;
     }
 
