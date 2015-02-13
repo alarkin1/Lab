@@ -12,5 +12,6 @@ import javax.swing.JOptionPane;
  * @author ALARKIN1
  */
 public interface MessageInputStrategy {
-     public abstract String inputMessage();
+
+    public abstract String inputMessage();
 }

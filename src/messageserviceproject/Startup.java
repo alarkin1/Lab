@@ -15,16 +15,14 @@ public class Startup {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MessageService service = new MessageService(new MessageGUI(), new GuiInputStrategy());
-        
-        
+        MessageService service = new MessageService(new MessageOutputGUI(), new MessageInputConsole());
+
         service.displayMessage();
-        
-        service.setMessage(new MessageConsole());
+
+        service.setMessage(new MessageOutputConsole());
         service.displayMessage();
 //        
-        
-        
+
     }
-    
+
 }

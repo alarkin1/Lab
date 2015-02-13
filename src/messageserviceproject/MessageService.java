@@ -10,37 +10,33 @@ package messageserviceproject;
  * @author ALARKIN1
  */
 public class MessageService {
-    private MessageOutputStrategy message;
-    private MessageInputStrategy inputMessage;
 
-    public MessageService() {
-    
+    private MessageOutputStrategy outputType;
+    private MessageInputStrategy inputType;
+
+    public MessageService(MessageOutputStrategy output, MessageInputStrategy input) {
+        this.outputType = output;
+        this.inputType = input;
     }
-    public MessageService(MessageOutputStrategy s, MessageInputStrategy i){
-        message = s;
-        inputMessage = i;
-    }
-    
+
     public MessageOutputStrategy getMessage() {
-        return message;
+        return outputType;
     }
 
     public void setMessage(MessageOutputStrategy message) {
-        this.message = message;
+        this.outputType = outputType;
     }
-    
-    public void displayMessage(){
-        
-        message.outputMessage(inputMessage.inputMessage());
+
+    public void displayMessage() {
+        outputType.outputMessage(inputType.inputMessage());
     }
 
     public MessageInputStrategy getInputMessage() {
-        return inputMessage;
+        return inputType;
     }
 
     public void setInputMessage(MessageInputStrategy inputMessage) {
-        this.inputMessage = inputMessage;
+        this.inputType = inputMessage;
     }
-    
-    
+
 }

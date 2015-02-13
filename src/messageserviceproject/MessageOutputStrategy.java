@@ -10,7 +10,7 @@ package messageserviceproject;
  * @author ALARKIN1
  */
 public interface MessageOutputStrategy {
-    
+
     public abstract void outputMessage(String message);
-    
+
 }

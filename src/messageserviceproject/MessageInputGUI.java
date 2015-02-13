@@ -11,9 +11,9 @@ import javax.swing.JOptionPane;
  *
  * @author ALARKIN1
  */
-public class GuiInputStrategy implements MessageInputStrategy{
-    
-    public String inputMessage(){
-    return JOptionPane.showInputDialog(null, "Enter a message: ");
-}
+public class MessageInputGUI implements MessageInputStrategy {
+
+    public String inputMessage() {
+        return JOptionPane.showInputDialog(null, "Enter a message: ");
+    }
 }

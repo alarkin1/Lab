@@ -5,15 +5,15 @@
  */
 package messageserviceproject;
 
+import java.util.Scanner;
+
 /**
  *
- * @author ALARKIN1
+ * @author Alex
  */
-public class MessageConsole implements MessageOutputStrategy {
-    
-    @Override
-    public void outputMessage(String message){
-        System.out.println(message);
+public class MessageInputConsole implements MessageInputStrategy{
+    public String inputMessage() {
+        Scanner keyboardInput = new Scanner(System.in);
+        return keyboardInput.nextLine();
     }
-    
 }
